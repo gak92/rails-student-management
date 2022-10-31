@@ -1,6 +1,13 @@
 <h1>Add a new Student</h1>
 
 <%= form_with model: @student do |f| %>
+
+  <% if @student.errors.any? %>
+    <% @student.errors.full_messages.each do |message| %>
+      <p><%= message%></p>
+    <% end %>
+  <% end %>
+
   <div>
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
