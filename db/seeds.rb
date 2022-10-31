@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+student = Student.create(
+  first_name: 'Ravi',
+  last_name: 'Singh',
+  email: 'ravi@abc.com'
+)
+
+20.times do |i|
+  puts "Creating student #{i+1}"
+  Student.create(
+    first_name: "Student_#{i+1}",
+    last_name: "Lname_#{i+1}",
+    email: "student_#{i+1}@abc.com"
+  )
+end
