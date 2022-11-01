@@ -31,3 +31,9 @@ Course.create(name: "React JS", description: "It's a bootcamp on Reac JS and Red
 Course.create(name: "Node JS", description: "It's a bootcamp on Node JS")
 Course.create(name: "Python", description: "It's a bootcamp on Python and framework")
 Course.create(name: "HTML/CSS", description: "It's a bootcamp on HTML and CSS")
+
+Project.create(name: 'DriverApp', description: 'Driver app')
+Project.create(name: 'Rails Projec', description: 'Build Blog on Ruby on Rails')
+Project.create(name: 'Javascript', description: 'Javascriipt plain projec')
+
+StudentProect.create(student_id: 1, project_id: 1, submission_date: Date.today+30.days)
