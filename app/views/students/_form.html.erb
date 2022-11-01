@@ -1,0 +1,24 @@
+<%= form_with model: student do |f| %>
+
+  <% if student.errors.any? %>
+    <% student.errors.full_messages.each do |message| %>
+      <p><%= message%></p>
+    <% end %>
+  <% end %>
+
+  <div>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div>
+    <%= f.label :email %><br>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<%end%>
